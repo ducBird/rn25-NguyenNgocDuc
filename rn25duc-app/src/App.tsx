@@ -10,8 +10,8 @@ function App() {
     <>
       <div id="wrapper">
         <header id="header"></header>
-        <section id="section">
-          <div id="content-left">
+        <section id="section" className="row">
+          <div id="content-left" className="col-md-3">
             <ul id="nav">
               <li>
                 <a href="">The Drive</a>
@@ -27,7 +27,7 @@ function App() {
               </li>
             </ul>
           </div>
-          <div id="content-center">
+          <div id="content-center" className="col-md-6">
             <h1>The Walk</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
@@ -40,7 +40,7 @@ function App() {
               alt=""
             />
           </div>
-          <div id="content-right">
+          <div id="content-right" className="col-md-3">
             <ul id="nav-right">
               <li>
                 <h1>What?</h1>

@@ -56,14 +56,13 @@ ul {
   background-color: #ccc;
 }
 
-#section {
+/* #section {
   display: flex;
   margin-top: 50px;
-}
-#section #content-left {
+} */
+/* #section #content-left {
   flex: 1;
-  /* background-color: red; */
-}
+} */
 
 #content-left > #nav li {
   padding: 10px;
@@ -76,20 +75,18 @@ ul {
   text-decoration: none;
 }
 
-#section #content-center {
+/* #section #content-center {
   flex: 1.5;
-  /* background-color: #000; */
   margin: 40px;
-}
+} */
 
 #content-center img {
   width: 100%;
 }
 
-#section #content-right {
+/* #section #content-right {
   flex: 1;
-  /* background-color: pink; */
-}
+} */
 
 #content-right #nav-right {
   background-color: aqua;
