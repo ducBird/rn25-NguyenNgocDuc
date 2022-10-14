@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+
+@layer base {
+}
+
+@layer components {
+  .container_BlockUI4 {
+    @apply inline-block m-2 p-2 bg-white border border-gray-400 shadow-lg;
+  }
+  .chartChildren {
+    @apply text-center text-gray-500 uppercase p-1 m-1;
+  }
+}
+
+.column_chart {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 30px;
+  height: 90px;
+}

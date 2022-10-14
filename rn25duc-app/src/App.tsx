@@ -1,7 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-// import logo from "./logo.svg";
-// import imgHouse from "./image/b";
 //
 import * as myIcon from "react-icons/fa";
 import "./App.css";
@@ -16,6 +14,9 @@ import BasicUI_2 from "./HomeWork/Session02/componentsBasicUI-2/BasicUI_2";
 import ComponentsBasicUI_3 from "./HomeWork/Session02/ComponentsBasicUI_3";
 import ComponentsBlockUI_1 from "./HomeWork/Session02/ComponentsBlockUI_1";
 import CpnBlockUI_3 from "./HomeWork/Session02/CpnBlockUI_3";
+import CpnBlockUI_4 from "./HomeWork/Session02/CpnBlockUI_4";
+import CpnBlockUI_5 from "./HomeWork/Session02/CpnBlockUI_5";
+
 function App() {
   let isLogin = false;
 
@@ -48,6 +49,14 @@ function App() {
           total={50000}
           unit="Like"
         /> */}
+
+        {/* <CpnBlockUI_4
+          text="yesterday's visitors"
+          unit="$"
+          total={15699}
+          percentages={[70, 55, 30, 40, 50]}
+        /> */}
+        {/* <CpnBlockUI_5 /> */}
       </div>
     </>
   );
