@@ -35,6 +35,7 @@ function index(props: Props) {
             </div>
             <div className="title_chart">mon</div>
           </div>
+
           <div className={`${styles.chartChildren}`}>
             <div className={`column_chart border ${styles.column_chart}`}>
               <div
@@ -47,6 +48,7 @@ function index(props: Props) {
             </div>
             <div className="title_chart">tue</div>
           </div>
+
           <div className={`${styles.chartChildren}`}>
             <div className={`column_chart border ${styles.column_chart}`}>
               <div
@@ -59,6 +61,7 @@ function index(props: Props) {
             </div>
             <div className="title_chart">web</div>
           </div>
+
           <div className={`${styles.chartChildren}`}>
             <div className={`column_chart border ${styles.column_chart}`}>
               <div
@@ -71,6 +74,7 @@ function index(props: Props) {
             </div>
             <div className="title_chart">thu</div>
           </div>
+
           <div className={`${styles.chartChildren}`}>
             <div className={`column_chart border ${styles.column_chart}`}>
               <div
