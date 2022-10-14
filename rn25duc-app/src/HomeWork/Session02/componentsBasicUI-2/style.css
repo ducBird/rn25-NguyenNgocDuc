@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+
+@layer base {
+  svg {
+    @apply w-[30px] h-[25px] text-yellow-500;
+  }
+}
+
+@layer components {
+}

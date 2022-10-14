@@ -3,62 +3,51 @@ import React from "react";
 // import logo from "./logo.svg";
 // import imgHouse from "./image/b";
 //
+import * as myIcon from "react-icons/fa";
 import "./App.css";
+import ExState from "./components/ExState/ExState";
+import ExStateFC from "./components/ExState/ExStateFC";
+import LifeCycle from "./components/ExState/LifeCycle";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Section from "./components/section/Section";
-import ProductContent from "./HomeWork/Session02/componentsBasicUI-1/ProductContent";
-import ProductImage from "./HomeWork/Session02/componentsBasicUI-1/ProductImage";
-import ProductContent_2 from "./HomeWork/Session02/componentsBasicUI-2/ProductContent_2";
-import ProductImage_2 from "./HomeWork/Session02/componentsBasicUI-2/ProductImage_2";
-import ProductContent_3 from "./HomeWork/Session02/componentsBasicUI-3/ProductContent_3";
-import ProductImage_3 from "./HomeWork/Session02/componentsBasicUI-3/ProductImage_3";
-
+import BasicUI_1 from "./HomeWork/Session02/componentsBasicUI-1/BasicUI_1";
+import BasicUI_2 from "./HomeWork/Session02/componentsBasicUI-2/BasicUI_2";
+import ComponentsBasicUI_3 from "./HomeWork/Session02/ComponentsBasicUI_3";
+import ComponentsBlockUI_1 from "./HomeWork/Session02/ComponentsBlockUI_1";
+import CpnBlockUI_3 from "./HomeWork/Session02/CpnBlockUI_3";
 function App() {
-  /* Default App
-  let isLogin = false; */
+  let isLogin = false;
+
+  // let checkText = "BANDWIDTH";
+  // let checkColor1 = "bg-danger";
+  // let checkColors = "bg-danger";
+  // let checkPercentage = 20;
   return (
     <>
       <div id="wrapper">
-        {/* Default App
-        <Header checkLogin={isLogin} />
-        <Section />
-        <Footer /> */}
-
-        {/* =========BEGIN BASIC UI====================================================== */}
-        <div className="basic-UI text-center border border-5 border-warning">
-          BASIC UI
-          {/* Basic UI - 1 */}
-          <div
-            id="container-bsui1"
-            className="row border border-2 rounded-3 mx-auto mt-4"
-            style={{ width: "550px" }}
-          >
-            <ProductImage />
-            <ProductContent />
-          </div>
-          {/* =============================================================== */}
-          {/* Basic UI - 2 */}
-          <div
-            id="container-bsui2"
-            className="border border-2 rounded-3 mx-auto mt-4"
-            style={{ width: "550px" }}
-          >
-            <ProductImage_2 />
-            <ProductContent_2 />
-          </div>
-          {/* =============================================================== */}
-          {/* Basic UI - 3 */}
-          <div
-            id="container-bsui3"
-            className="border border-2 rounded-3 mx-auto mt-4"
-            style={{ width: "550px" }}
-          >
-            <ProductImage_3 />
-            <ProductContent_3 />
-          </div>
-        </div>
-        {/* ========END BASIC UI======================================================= */}
+        {/* <BasicUI_1 />
+        <BasicUI_2 />
+        <ComponentsBasicUI_3 /> */}
+        {/* <ComponentsBlockUI_1
+          text="BandWidth"
+          color1="bg-red-700"
+          colors="bg-red-400"
+          percentage={20}
+        /> */}
+        {/* <ComponentsBlockUI_1
+          text="BandWidth"
+          color1="bg-red-700"
+          colors="red"
+          percentage={20}
+        /> */}
+        {/* <CpnBlockUI_3
+          text="Facebook"
+          color="bg-blue-500"
+          iconName={<myIcon.FaFacebookF />}
+          total={50000}
+          unit="Like"
+        /> */}
       </div>
     </>
   );

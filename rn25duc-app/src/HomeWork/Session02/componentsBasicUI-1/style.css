@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+
+@layer base {
+  p {
+    @apply text-gray-500 py-1;
+  }
+}
+
+@layer components {
+  .text-content {
+    @apply my-auto;
+  }
+}
