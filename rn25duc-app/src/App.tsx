@@ -8,6 +8,7 @@ import ExStateFC from "./components/ExState/ExStateFC";
 import LifeCycle from "./components/ExState/LifeCycle";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
+import Demo from "./components/ReactHook/UseEffect/Demo";
 import Section from "./components/section/Section";
 import BasicUI_1 from "./HomeWork/Session02/componentsBasicUI-1/BasicUI_1";
 import BasicUI_2 from "./HomeWork/Session02/componentsBasicUI-2/BasicUI_2";
@@ -16,6 +17,9 @@ import ComponentsBlockUI_1 from "./HomeWork/Session02/ComponentsBlockUI_1";
 import CpnBlockUI_3 from "./HomeWork/Session02/CpnBlockUI_3";
 import CpnBlockUI_4 from "./HomeWork/Session02/CpnBlockUI_4";
 import CpnBlockUI_5 from "./HomeWork/Session02/CpnBlockUI_5";
+import LikeButton from "./HomeWork/Session05/LikeButton";
+import Basic from "./HomeWork/Session04/Basic/practice";
+import RatingStar from "./HomeWork/Session05/RatingStar";
 
 function App() {
   let isLogin = false;
@@ -49,7 +53,6 @@ function App() {
           total={50000}
           unit="Like"
         /> */}
-
         {/* <CpnBlockUI_4
           text="yesterday's visitors"
           unit="$"
@@ -57,6 +60,9 @@ function App() {
           percentages={[70, 55, 30, 40, 50]}
         /> */}
         {/* <CpnBlockUI_5 /> */}
+        {/* <LikeButton /> */}
+        {/* <Basic /> */}
+        <RatingStar />
       </div>
     </>
   );

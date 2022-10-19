@@ -5,6 +5,9 @@
   body {
     /* @apply font-defaultfont; */
   }
+  button {
+    @apply px-6 py-2.5 m-1 bg-gray-400 rounded-md;
+  }
 }
 
 @layer components {

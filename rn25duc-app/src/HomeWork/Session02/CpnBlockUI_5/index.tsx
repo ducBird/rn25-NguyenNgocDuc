@@ -12,30 +12,35 @@ import * as myIcon from "react-icons/fa";
 type Props = {};
 
 function index({}: Props) {
-  // let myObject = [
-  //   {
-  //     icon: <myIcon.Fa500Px />,
-  //     title: "dasd",
-  //     datetime: "asda",
-  //   },
-  //   {
-  //     icon: <myIcon.Fa500Px />,
-  //     title: "dasd",
-  //     datetime: "asda",
-  //   },
-  //   {
-  //     icon: <myIcon.Fa500Px />,
-  //     title: "dasd",
-  //     datetime: "asda",
-  //   },
-  // ];
+  let myArray = [
+    {
+      icon: <myIcon.FaCalendarAlt />,
+      title: "DOB",
+      content: "23/05/2014",
+    },
+    {
+      icon: <myIcon.FaHeart />,
+      title: "BG",
+      content: "B+",
+    },
+    {
+      icon: <myIcon.FaUserGraduate />,
+      title: "EDU",
+      content: "MCA",
+    },
+    {
+      icon: <myIcon.FaMapMarkerAlt />,
+      title: "RES",
+      content: "Bangalore",
+    },
+  ];
   // let renderIcon = ()=>{
-  //   return myObject.map((element)=>{
+  //   return myArray.map((element)=>{
   //     return element.icon;
   //   })
   //   }
   // let renderTitle = ()=>{
-  //   return myObject.map((element)=>{
+  //   return myArray.map((element)=>{
   //     return element.title
   //   })
   //   }
