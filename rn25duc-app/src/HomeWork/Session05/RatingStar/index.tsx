@@ -21,22 +21,35 @@ function index() {
 
   const [star, setStar] = useState(0);
   const starIcon: JSX.Element[] = [];
+  // for (let index = 1; index <= 5; index++) {
+  //   starIcon.push(
+  //     <faIcon.FaStar
+  //       onClick={() => {
+  //         setStar(index);
+  //       }}
+  //       style={index <= star ? starSelect : starDefault}
+  //     />
+  //   );
+  // }
   for (let index = 1; index <= 5; index++) {
-    starIcon.push(
-      <faIcon.FaStar
-        onClick={() => {
-          setStar(index);
-        }}
-        style={index <= star ? starSelect : starDefault}
-      />
-    );
+    starIcon.push(<faIcon.FaStar style={starDefault} />);
   }
 
   return (
     <>
       <div className="rating inline-block m-2 border border-black">
-        {starIcon}
+        {/* {starIcon} */}
         <p>{star}</p>
+        {starIcon.map((element, index) => {
+          return (
+            <faIcon.FaStar
+              onClick={() => {
+                setStar(index);
+              }}
+              style={index <= star ? starSelect : starDefault}
+            />
+          );
+        })}
       </div>
     </>
   );

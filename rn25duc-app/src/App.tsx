@@ -18,8 +18,9 @@ import CpnBlockUI_3 from "./HomeWork/Session02/CpnBlockUI_3";
 import CpnBlockUI_4 from "./HomeWork/Session02/CpnBlockUI_4";
 import CpnBlockUI_5 from "./HomeWork/Session02/CpnBlockUI_5";
 import LikeButton from "./HomeWork/Session05/LikeButton";
-import Basic from "./HomeWork/Session04/Basic/practice";
 import RatingStar from "./HomeWork/Session05/RatingStar";
+import Basic from "./HomeWork/Session04/Basic/Main";
+import Basic2 from "./HomeWork/Session04/Basic2/Main";
 
 function App() {
   let isLogin = false;
@@ -61,8 +62,9 @@ function App() {
         /> */}
         {/* <CpnBlockUI_5 /> */}
         {/* <LikeButton /> */}
-        {/* <Basic /> */}
-        <RatingStar />
+        {/* <RatingStar /> */}
+        <Basic />
+        <Basic2 />
       </div>
     </>
   );
