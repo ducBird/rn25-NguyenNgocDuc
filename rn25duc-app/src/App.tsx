@@ -64,7 +64,7 @@ function App() {
         {/* <LikeButton /> */}
         {/* <RatingStar /> */}
         <Basic />
-        <Basic2 />
+        {/* <Basic2 /> */}
       </div>
     </>
   );
