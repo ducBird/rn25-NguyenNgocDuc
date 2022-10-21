@@ -1,0 +1,42 @@
+.messageError {
+  color: rgb(251, 2, 2);
+}
+
+/* .imageForm {
+  width: 100%;
+  height: 600px;
+  background: url("../img/imageForm_3.png") top center / cover no-repeat;
+} */
+.imageForm {
+  width: 85%;
+  height: auto;
+}
+
+.inputText {
+  width: 80%;
+  padding: 8px;
+  border-radius: 6px;
+  border-color: #ccc;
+  transition: border 0.2s ease-in-out;
+}
+
+.inputText:focus-visible {
+  border: 2px solid rgb(185 28 28);
+  color: rgb(185 28 28);
+  font-weight: 500;
+}
+
+.btn {
+  width: 80%;
+  font-weight: 700;
+  margin-top: 16px;
+  border: 1px solid rgb(185 28 28);
+  color: rgb(185 28 28);
+  transition: background-color ease-in-out 0.3s;
+  /* transition: padding ease-in-out 0.3s; */
+}
+
+.btn:hover {
+  background-color: rgb(185 28 28);
+  color: #fff;
+}

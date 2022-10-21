@@ -3,7 +3,7 @@ import React from "react";
 function Main() {
   console.log("Sesion 4 Basic2:");
 
-  //Bài 10
+  // Bài 10
   // let N = 7; // số lít xăng cần mua
   // let a = 3, //mua 1l xăng với a USD
   //   b = 4; // mua 2l xăng với b USD

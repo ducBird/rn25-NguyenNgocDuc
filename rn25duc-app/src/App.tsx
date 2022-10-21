@@ -21,9 +21,12 @@ import LikeButton from "./HomeWork/Session05/LikeButton";
 import RatingStar from "./HomeWork/Session05/RatingStar";
 import Basic from "./HomeWork/Session04/Basic/Main";
 import Basic2 from "./HomeWork/Session04/Basic2/Main";
+import UseStateForm from "./components/ReactHook/UseStateForm/Demo";
+import MultipleForm from "./components/ReactHook/UseStateForm/MultipleForm";
+import Formik_3 from "./HomeWork/Session06/Form3/Formik_3";
 
 function App() {
-  let isLogin = false;
+  // let isLogin = false;
 
   // let checkText = "BANDWIDTH";
   // let checkColor1 = "bg-danger";
@@ -60,11 +63,17 @@ function App() {
           total={15699}
           percentages={[70, 55, 30, 40, 50]}
         /> */}
+
         {/* <CpnBlockUI_5 /> */}
         {/* <LikeButton /> */}
         {/* <RatingStar /> */}
-        <Basic />
+        {/* <Basic /> */}
         {/* <Basic2 /> */}
+        {/* <UseStateForm /> */}
+        {/* <MultipleForm /> */}
+
+        {/* Session 6 RegisterFormWithYup Formik */}
+        <Formik_3 />
       </div>
     </>
   );
