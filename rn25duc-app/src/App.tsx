@@ -24,6 +24,8 @@ import Basic2 from "./HomeWork/Session04/Basic2/Main";
 import UseStateForm from "./components/ReactHook/UseStateForm/Demo";
 import MultipleForm from "./components/ReactHook/UseStateForm/MultipleForm";
 import Formik_3 from "./HomeWork/Session06/Form3/Formik_3";
+import Class_LikeButton from "./HomeWork/Session03/Class_LikeButton";
+import Class_RatingStar from "./HomeWork/Session03/Class_RatingStar";
 
 function App() {
   // let isLogin = false;
@@ -35,6 +37,7 @@ function App() {
   return (
     <>
       <div id="wrapper">
+        {/* ==========Session 02========== */}
         {/* <BasicUI_1 />
         <BasicUI_2 />
         <ComponentsBasicUI_3 /> */}
@@ -63,17 +66,25 @@ function App() {
           total={15699}
           percentages={[70, 55, 30, 40, 50]}
         /> */}
-
         {/* <CpnBlockUI_5 /> */}
-        {/* <LikeButton /> */}
-        {/* <RatingStar /> */}
+
+        {/* ==========Session 03========== */}
+        {/* <Class_LikeButton /> */}
+        <Class_RatingStar />
+
+        {/* ==========Session 04========== */}
         {/* <Basic /> */}
         {/* <Basic2 /> */}
+
+        {/* ==========Session 05========== */}
+        {/* <LikeButton /> */}
+        {/* <RatingStar /> */}
+
         {/* <UseStateForm /> */}
         {/* <MultipleForm /> */}
 
-        {/* Session 6 RegisterFormWithYup Formik */}
-        <Formik_3 />
+        {/* ==========Session 06 RegisterFormWithYup Formik========== */}
+        {/* <Formik_3 /> */}
       </div>
     </>
   );
