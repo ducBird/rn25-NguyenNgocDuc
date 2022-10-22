@@ -6,30 +6,47 @@ import imgForm3 from "../img/imageForm_3.png";
 import logoForm3 from "../img/logoForm_3.png";
 
 const SignupSchema = Yup.object({
-  userName: Yup.string()
+  name: Yup.string()
     .min(3, "The name must be unique and between 3 - 128 characters")
     .max(128, "The name must be unique and between 3 - 128 characters")
-    .email("Invalid email")
+    // .email("Invalid email")
     .required("The name is not blank"),
   // email: Yup.string().email("Invalid email").required("Required"),
-  password: Yup.string().required("Password is required"),
-  // passwordConfirmation: Yup.string().oneOf(
-  //   [Yup.ref("password"), null],
-  //   "Passwords must match"
-  // ),
-  remember: Yup.boolean(),
+  // password: Yup.string().required("Password is required"),
+  // // passwordConfirmation: Yup.string().oneOf(
+  // //   [Yup.ref("password"), null],
+  // //   "Passwords must match"
+  // // ),
+  // remember: Yup.boolean(),
 });
 
 function Formik_3() {
   const formik = useFormik({
     initialValues: {
-      userName: "",
-      password: "",
-      remember: true,
+      name: "",
+      // password: "",
+      // remember: true,
     },
     validationSchema: SignupSchema,
     onSubmit: (values) => {
       console.log(values);
+      const url = "https://63528f3aa9f3f34c3741594a.mockapi.io/users";
+      fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      })
+        .then((response) => response.json())
+        .then((json) => {
+          // Xử lý kết quả JSON ở đây
+          console.log(json);
+        })
+        .catch((error) => {
+          // Nếu có lỗi
+          console.error(error);
+        });
     },
   });
 
@@ -63,20 +80,20 @@ function Formik_3() {
             </div>
             <form onSubmit={formik.handleSubmit} className="mt-10">
               <div className="mb-3">
-                <div className="text-gray-600">Username</div>
+                <div className="text-gray-600">name</div>
                 <input
                   className={style.inputText}
-                  name="userName"
-                  value={formik.values.userName}
+                  name="name"
+                  value={formik.values.name}
                   onChange={formik.handleChange}
                   // onBlur={handleBlur}
                   placeholder="Enter your email"
                 />
                 <p className={style.messageError}>
-                  {formik.touched.userName ? formik.errors.userName : null}
+                  {formik.touched.name ? formik.errors.name : null}
                 </p>
               </div>
-              <div className="mb-3">
+              {/* <div className="mb-3">
                 <div className="text-gray-600">Password</div>
                 <input
                   className={style.inputText}
@@ -87,9 +104,10 @@ function Formik_3() {
                   placeholder="Enter your password"
                 />
                 <p className={style.messageError}>
-                  {formik.touched.userName ? formik.errors.password : null}
+                  {formik.touched.name ? formik.errors.password : null}
                 </p>
               </div>
+
               <div className="w-[80%] flex justify-between items-center text-xs">
                 <div>
                   <input
@@ -104,7 +122,7 @@ function Formik_3() {
                 <span className="cursor-pointer text-red-700 hover:underline">
                   Reset Password?
                 </span>
-              </div>
+              </div> */}
               <button type="submit" className={style.btn}>
                 Login
               </button>

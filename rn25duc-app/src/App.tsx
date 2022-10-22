@@ -26,6 +26,7 @@ import MultipleForm from "./components/ReactHook/UseStateForm/MultipleForm";
 import Formik_3 from "./HomeWork/Session06/Form3/Formik_3";
 import Class_LikeButton from "./HomeWork/Session03/Class_LikeButton";
 import Class_RatingStar from "./HomeWork/Session03/Class_RatingStar";
+import ShowData from "./HomeWork/Session06/Form3/ShowData";
 
 function App() {
   // let isLogin = false;
@@ -53,13 +54,13 @@ function App() {
           colors="red"
           percentage={20}
         /> */}
-        {/* <CpnBlockUI_3
+        <CpnBlockUI_3
           text="Facebook"
           color="bg-blue-500"
           iconName={<myIcon.FaFacebookF />}
           total={50000}
           unit="Like"
-        /> */}
+        />
         {/* <CpnBlockUI_4
           text="yesterday's visitors"
           unit="$"
@@ -70,7 +71,7 @@ function App() {
 
         {/* ==========Session 03========== */}
         {/* <Class_LikeButton /> */}
-        <Class_RatingStar />
+        {/* <Class_RatingStar /> */}
 
         {/* ==========Session 04========== */}
         {/* <Basic /> */}
@@ -84,7 +85,8 @@ function App() {
         {/* <MultipleForm /> */}
 
         {/* ==========Session 06 RegisterFormWithYup Formik========== */}
-        {/* <Formik_3 /> */}
+        {/* <Formik_3 />
+        <ShowData /> */}
       </div>
     </>
   );
