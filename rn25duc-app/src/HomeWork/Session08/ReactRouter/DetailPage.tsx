@@ -120,6 +120,10 @@ function DetailPage() {
             className={`${style.btnBackListPage}`}
             style={{ float: "right" }}
             type="submit"
+            onClick={() => {
+              alert("Update Success");
+              getUserApi();
+            }}
           >
             Update
           </button>
