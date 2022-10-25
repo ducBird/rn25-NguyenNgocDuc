@@ -49,6 +49,11 @@ function MultipleForm() {
     }
   };
 
+  const handleSelect = (e: any) => {
+    // console.log(e.target.value);
+    setInput({ ...input, [e.target.name]: e.target.value });
+  };
+
   return (
     <>
       <form onSubmit={handleSubmit}>
@@ -89,7 +94,11 @@ function MultipleForm() {
           <label htmlFor="country" className="mr-2">
             Country
           </label>
-          <select name="country" className="border border-black rounded-lg">
+          <select
+            onChange={handleSelect}
+            name="country"
+            className="border border-black rounded-lg"
+          >
             <option value="VietNam">VietNam</option>
             <option value="American">American</option>
             <option value="Japan">Japan</option>

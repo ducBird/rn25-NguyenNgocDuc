@@ -1,0 +1,21 @@
+.btnBackListPage {
+  margin: 12px;
+  /* border: 1px solid #000; */
+  border-radius: 8px;
+  background-color: #fff;
+  color: blue;
+  /* filter: drop-shadow(0 4px 3px rgba(176, 176, 176, 0.349))
+    drop-shadow(0 2px 2px rgba(204, 204, 204, 0.832)); */
+  transition: padding 0.5s ease;
+}
+.btnBackListPage:hover {
+  padding: 10px 50px 10px 50px;
+}
+
+.liLink {
+  transition: border 0.5s ease;
+}
+
+.liLink:hover {
+  border: 1px solid black;
+}

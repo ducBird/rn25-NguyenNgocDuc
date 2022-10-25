@@ -56,6 +56,9 @@ function Formik_3() {
   const handleBlur = (e: any) => {
     console.log(e.target.value);
   };
+  const handleCLickBtn = () => {
+    alert("Success Add UserName");
+  };
 
   return (
     <>
@@ -80,14 +83,14 @@ function Formik_3() {
             </div>
             <form onSubmit={formik.handleSubmit} className="mt-10">
               <div className="mb-3">
-                <div className="text-gray-600">name</div>
+                <div className="text-gray-600">UserName</div>
                 <input
                   className={style.inputText}
                   name="name"
                   value={formik.values.name}
                   onChange={formik.handleChange}
                   // onBlur={handleBlur}
-                  placeholder="Enter your email"
+                  placeholder="Enter user name"
                 />
                 <p className={style.messageError}>
                   {formik.touched.name ? formik.errors.name : null}
@@ -123,8 +126,12 @@ function Formik_3() {
                   Reset Password?
                 </span>
               </div> */}
-              <button type="submit" className={style.btn}>
-                Login
+              <button
+                type="submit"
+                className={style.btn}
+                onClick={handleCLickBtn}
+              >
+                Add Name User
               </button>
               <p className="w-[80%] text-center mt-4">
                 Don't have an account yet?{" "}

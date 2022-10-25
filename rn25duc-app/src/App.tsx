@@ -27,6 +27,9 @@ import Formik_3 from "./HomeWork/Session06/Form3/Formik_3";
 import Class_LikeButton from "./HomeWork/Session03/Class_LikeButton";
 import Class_RatingStar from "./HomeWork/Session03/Class_RatingStar";
 import ShowData from "./HomeWork/Session06/Form3/ShowData";
+import FormControl from "./HomeWork/Session07/FormControl/FormControl";
+import DemoRouter from "./components/ReactRouter/DemoRouter";
+import HomePage from "./HomeWork/Session08/ReactRouter/HomePage";
 
 function App() {
   // let isLogin = false;
@@ -54,13 +57,13 @@ function App() {
           colors="red"
           percentage={20}
         /> */}
-        <CpnBlockUI_3
+        {/* <CpnBlockUI_3
           text="Facebook"
           color="bg-blue-500"
           iconName={<myIcon.FaFacebookF />}
           total={50000}
           unit="Like"
-        />
+        /> */}
         {/* <CpnBlockUI_4
           text="yesterday's visitors"
           unit="$"
@@ -81,12 +84,18 @@ function App() {
         {/* <LikeButton /> */}
         {/* <RatingStar /> */}
 
+        {/* ==========Session 06 RegisterFormWithYup Formik========== */}
         {/* <UseStateForm /> */}
         {/* <MultipleForm /> */}
+        {/* <Formik_3 /> */}
+        {/* <ShowData /> */}
 
-        {/* ==========Session 06 RegisterFormWithYup Formik========== */}
-        {/* <Formik_3 />
-        <ShowData /> */}
+        {/* ==========Session 07========== */}
+        {/* <FormControl /> */}
+
+        {/* ==========Session 08========== */}
+        {/* <DemoRouter /> */}
+        <HomePage />
       </div>
     </>
   );

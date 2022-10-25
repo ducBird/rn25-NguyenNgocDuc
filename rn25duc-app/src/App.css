@@ -5,14 +5,14 @@
   body {
     /* @apply font-defaultfont; */
   }
-  button {
-    @apply px-6 py-2.5 m-1 bg-gray-400 rounded-md;
-  }
 }
 
 @layer components {
   input {
     @apply m-1 border border-black;
+  }
+  button {
+    @apply px-6 py-2.5 m-1 bg-gray-400 rounded-md;
   }
   /* .btn {
     @apply border-2 border-primary rounded uppercase px-4 py-2 text-xl cursor-pointer font-semibold;

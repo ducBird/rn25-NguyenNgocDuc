@@ -1,0 +1,27 @@
+.inputInfo {
+  width: 100%;
+  border-radius: 5px;
+}
+
+select {
+  border: 2px solid gray;
+  border-radius: 0.3rem;
+}
+
+.btn {
+  color: white;
+  background-color: rgb(76, 129, 253);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn_checkbox {
+  padding: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
